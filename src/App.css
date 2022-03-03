@@ -27,12 +27,38 @@
 .App-link {
   color: #61dafb;
 }
-
+.card {
+  width: 18rem;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .news-container {
+    justify-content: center;
+  }
+  .card {
+    margin-left: 100px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .news-container {
+    justify-content: center;
+  }
+  .card {
+    margin-left: 0;
+
+    width: 100%;
   }
 }
