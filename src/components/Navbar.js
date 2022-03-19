@@ -1,11 +1,10 @@
 import React, { Component } from "react";
+import '../App.css';
 import flatEathIcon from "./planet-earth.png";
+import { Link } from "react-router-dom";
 export default class Navbar extends Component {
 
     render() {
-        function jadusReply() {
-            alert("JAADOO want some sunlight so he is going to sun ");
-        }
         return (<>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container-fluid">
@@ -15,8 +14,9 @@ export default class Navbar extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
-                            <a className="nav-link disabled" onClick={jadusReply} href="/">Contact-Aliens</a>
+                            <Link className="nav-link active" aria-current="page" to="/world">World</Link>
+                            <Link className="nav-link active" aria-current="page" to="/india">India</Link>
+                            <Link className="nav-link active" aria-current="page" to="/business">Business</Link>
                         </div>
                     </div>
                 </div>

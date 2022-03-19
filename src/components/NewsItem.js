@@ -10,7 +10,7 @@ export default class NewsItem extends Component {
                 <div className="card" >
                     <a href={`https://www.indiatoday.in/${this.props.readFull}`} target="_blank" rel="noreferrer" > <img style={{ height: "190px", }} src={url ? url : noimg} className="card-img-top" alt="some-news" /></a>
                     <div className="card-body">
-                        <h5 className="card-title">{title}...</h5>
+                        <h5 className="card-title">{title}</h5>
                         <p className="card-text">{desc}...</p>
                         <a href={`https://www.indiatoday.in/${this.props.readFull}`} className="btn btn-sm btn-primary" target="_blank" rel="noreferrer">Read More...</a>
                     </div>
