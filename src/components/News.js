@@ -2,9 +2,17 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import '../App.css'
 import Spinner from "./Spinner";
+import PropTypes from 'prop-types';
 
 class News extends Component {
 
+    static defaultProps = {
+        category: "world",
+    }
+
+    static propTypes = {
+        country: PropTypes.string
+    }
 
     articles = []
     constructor() {
