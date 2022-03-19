@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FlatEarth-News/static/css/main.d541b639.css",
-    "main.js": "/FlatEarth-News/static/js/main.e576d9ba.js",
+    "main.js": "/FlatEarth-News/static/js/main.5426c5e4.js",
     "static/media/loader.gif": "/FlatEarth-News/static/media/loader.3c62c9e0b6029258f969.gif",
     "static/media/planet-earth.png": "/FlatEarth-News/static/media/planet-earth.1f99a1873b0722b85af7.png",
     "index.html": "/FlatEarth-News/index.html",
     "main.d541b639.css.map": "/FlatEarth-News/static/css/main.d541b639.css.map",
-    "main.e576d9ba.js.map": "/FlatEarth-News/static/js/main.e576d9ba.js.map"
+    "main.5426c5e4.js.map": "/FlatEarth-News/static/js/main.5426c5e4.js.map"
   },
   "entrypoints": [
     "static/css/main.d541b639.css",
-    "static/js/main.e576d9ba.js"
+    "static/js/main.5426c5e4.js"
   ]
 }
