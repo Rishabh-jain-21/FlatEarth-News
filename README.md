@@ -1,10 +1,10 @@
 # Getting Started with Create React App
 -----------------------------------------------------------------------------------------------------
-Live at : 
-https://rishabh-jain-21.github.io/FlatEarth-News/
-Api use :
-https://india-today-api.rishabhjain48.repl.co/
-the api above is also created by me so the web app works a little slow as the api works a little slow
+Live at : \
+https://rishabh-jain-21.github.io/FlatEarth-News/ \
+Api use : \
+https://india-today-api.rishabhjain48.repl.co/ \
+the api above is also created by me so the web app works a little slow as the api works a little slow \
 -----------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
