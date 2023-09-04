@@ -3,8 +3,12 @@
 Live at : \
 https://rishabh-jain-21.github.io/FlatEarth-News/ \
 Api use : \
-https://india-today-api.rishabhjain48.repl.co/ \
+https://replit.com/@RishabhJain48/ndtv-api#index.js / \
 the api above is also created by me so the web app works a little slow as the api works a little slow \
+
+this is how the web page looks:
+![image](https://github.com/Rishabh-jain-21/FlatEarth-News/assets/79372016/c30f8e34-e5db-4640-aca2-4b6ffb253607)
+
 -----------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
