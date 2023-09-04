@@ -11,12 +11,12 @@ export default class App extends Component {
           <Navbar />
           <Routes>
             {/* key is provied to react component to differnetite between these routes */}
-            <Route exact path="/" element={<News key="world" category="world" />}></Route>
+            <Route exact path="/" element={<News key="india" category="india" />}></Route>
             <Route exact path="/india" element={<News key="india" category="india" />}></Route>
-            <Route exact path="/world" element={<News key="world" category="world" />}></Route>
-            <Route exact path="/business" element={<News key="business" category="business" />}></Route>
+            <Route exact path="/world" element={<News key="world/asia" category="world/asia" />}></Route>
+            <Route exact path="/education" element={<News key="education" category="education" />}></Route>
             <Route path="*" element={<Error />}></Route>
-            <Route exact path="/FlatEarth-News" element={<News key="world" category="world" />}></Route>
+            <Route exact path="/FlatEarth-News" element={<News key="world/asia" category="world/asia" />}></Route>
           </Routes>
         </BrowserRouter>
       </>);

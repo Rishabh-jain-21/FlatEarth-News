@@ -14,25 +14,28 @@ class News extends Component {
         country: PropTypes.string
     }
 
+
+
     articles = []
     constructor() {
         super();
         this.state = {
             articles: this.articles,
             loading: true,
-            page: 0,
+            page: 2,
         }
     }
 
     async componentDidMount() {
-        let url = `https://india-today-api.rishabhjain48.repl.co/${this.props.category}/p/0`;
+        let url = `https://ndtv-api.rishabhjain48.repl.co/${this.props.category}`;
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({ articles: parsedData, loading: false });
     }
     handlePreviousClick = async () => {
-        if (this.state.page >= 0) {
-            let url = `https://india-today-api.rishabhjain48.repl.co/${this.props.category}/p/${this.state.page - 1}`;
+        if (this.state.page >= 1) {
+            let url = `https://ndtv-api.rishabhjain48.repl.co/${this.props.category}/page-${this.state.page}`;
+            console.log(url);
             this.setState({ loading: true });
             let data = await fetch(url);
             let parsedData = await data.json();
@@ -41,15 +44,15 @@ class News extends Component {
 
     }
     handleNextClick = async () => {
-        let url = `https://india-today-api.rishabhjain48.repl.co/${this.props.category}/p/${this.state.page + 1}`;
+        let url = `https://ndtv-api.rishabhjain48.repl.co/${this.props.category}/page-${this.state.page}`;
         this.setState({ loading: true });
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({ articles: parsedData, page: this.state.page + 1, loading: false });
     }
     render() {
-
         return (
+
             <div className="container" >
 
                 <h1 className="my-3">News is showing here</h1>
@@ -66,7 +69,7 @@ class News extends Component {
                 </div>
                 {!this.state.loading &&
                     <div className="d-flex justify-content-between my-3">
-                        <button className="btn btn-dark" onClick={this.handlePreviousClick} disabled={this.state.page < 1}>&larr; Previous</button>
+                        <button className="btn btn-dark" onClick={this.handlePreviousClick} disabled={this.state.page <= 2}>&larr; Previous</button>
                         <button className="btn btn-dark" onClick={this.handleNextClick} >Next &rarr;</button>
                     </div>
                 }

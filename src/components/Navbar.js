@@ -16,7 +16,7 @@ export default class Navbar extends Component {
                         <div className="navbar-nav">
                             <Link className="nav-link active" aria-current="page" to="/world">World</Link>
                             <Link className="nav-link active" aria-current="page" to="/india">India</Link>
-                            <Link className="nav-link active" aria-current="page" to="/business">Business</Link>
+                            <Link className="nav-link active" aria-current="page" to="/education">Education</Link>
                         </div>
                     </div>
                 </div>
